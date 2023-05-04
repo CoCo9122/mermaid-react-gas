@@ -1,0 +1,39 @@
+{
+  "name": "mermaid-react-gas",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-zoom-pan-pinch": "^3.0.7",
+    "uninstall": "^0.0.0"
+  },
+  "devDependencies": {
+    "@chakra-ui/icons": "^2.0.19",
+    "@chakra-ui/react": "^2.6.0",
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@google/clasp": "^2.4.2",
+    "@monaco-editor/react": "^4.5.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "copy-image-clipboard": "^2.1.2",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "framer-motion": "^10.12.7",
+    "html2canvas": "^1.4.1",
+    "mermaid": "^10.1.0",
+    "vite": "^4.3.2",
+    "vite-plugin-singlefile": "^0.13.5"
+  }
+}
