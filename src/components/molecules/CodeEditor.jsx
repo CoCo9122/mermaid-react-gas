@@ -63,7 +63,7 @@ const CodeEditor = () => {
     }
 
     useEffect(() => {
-        setHeight(`${windowHeight-470}`)
+        setHeight(`${(windowHeight-100)*0.88-48}px`)
     }, [windowHeight])
 
     return(
@@ -71,7 +71,7 @@ const CodeEditor = () => {
             <Editor
                 language="markdown"
                 value=""
-                height={`${height}px`}
+                height={height}
                 editorDidMount={handleEditorDidMount}
                 onMount={handleEditorOnMount}
                 onChange={handleEditorChanges}

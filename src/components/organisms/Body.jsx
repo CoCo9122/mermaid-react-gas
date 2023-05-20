@@ -56,10 +56,10 @@ const Body = () => {
                 </Slider>
                 <EditorValueDataContext.Provider value={[editorValue, setEditorValue]}>
                     <Flex>
-                        <Box w={`${sliderValue-0.5}%`}>
-                            <Box bg={'teal.300'} borderRadius={"5px"} h={`${height-400}px`}>
+                        <Box w={`${sliderValue-0.5}%`}  h={`${height-100}px`}>
+                            <Box bg={'teal.300'} borderRadius={"5px"} h={`${(height-100)*0.9}px`}>
                                 <EditorHeader src={editorValue}/>
-                                <CodeEditor />
+                                <CodeEditor/>
                             </Box>
                             <Box>
                                 <SampleDiagramAccodiion />
