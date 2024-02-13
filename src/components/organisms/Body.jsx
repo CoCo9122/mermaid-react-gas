@@ -57,32 +57,32 @@ const Body = () => {
                 <EditorValueDataContext.Provider value={[editorValue, setEditorValue]}>
                     <Flex>
                         <Box w={`${sliderValue-0.5}%`}  h={`${height-100}px`}>
-                            <Box bg={'teal.300'} borderRadius={"5px"} h={`${(height-100)*0.9}px`}>
+                            <Box bg={'teal.300'} borderRadius={"5px"} h={`${height-100}px`}>
                                 <EditorHeader src={editorValue}/>
                                 <CodeEditor/>
                             </Box>
-                            <Box>
+                            {/* <Box>
                                 <SampleDiagramAccodiion />
                             </Box>
                             <Box>
                                 <ActionAccodion src={editorValue}/>
-                            </Box>
+                            </Box> */}
                         </Box>
                         <Spacer />
                         <Box w={`${100-sliderValue-0.5}%`} bg={'teal.300'} borderRadius={"5px"} h={`${height-100}px`}>
-                            <Tabs variant='soft-rounded' colorScheme='green'>
+                            {/* <Tabs variant='soft-rounded' colorScheme='green'> */}
                                 <DiagramHeader />
-                                <TabPanels>
-                                    <TabPanel m={0} p={0}>
+                                {/* <TabPanels>
+                                    <TabPanel m={0} p={0}> */}
                                         <Box h={`${height-170}px`} bg={'gray.100'} w={"100%"} justifyContent={'center'} textAlign={"center"}>
                                             <Mermaid src={editorValue} id={'show-mermaid'} log={logValue} setLog={setLogValue}/>
                                         </Box>
-                                    </TabPanel>
+                                    {/* </TabPanel>
                                     <TabPanel m={0} p={0}>
 
                                     </TabPanel>
-                                </TabPanels>
-                            </Tabs>
+                                </TabPanels> */}
+                            {/* </Tabs> */}
                         </Box>
                     </Flex>
                 </EditorValueDataContext.Provider>

@@ -63,7 +63,7 @@ const CodeEditor = () => {
     }
 
     useEffect(() => {
-        setHeight(`${(windowHeight-100)*0.88-48}px`)
+        setHeight(`${windowHeight-170}px`)
     }, [windowHeight])
 
     return(

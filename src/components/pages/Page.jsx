@@ -11,19 +11,10 @@ const Page = () => {
     const [generalData, setGeneralData] = useState({})
 
     useEffect(() => {
-        gasRun('getUser', {sheetId:'main_sheet'},
-        (result) => {
-            setGeneralData(result)
-        },
-        () => {
-
-        }).catch((error) => {
-            console.log(error)
-            setGeneralData({
-                id: 0,
-                src:'',
-                mailAddress:''
-            })
+        setGeneralData({
+            id: 0,
+            src:'',
+            mailAddress:''
         })
     },[])
 

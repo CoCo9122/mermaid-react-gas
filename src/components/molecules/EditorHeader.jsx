@@ -97,7 +97,7 @@ const EditorHeader = ({src}) => {
         <Flex h={"48px"} bg={'teal.300'} justifyContent={'left'} textAlign={"left"} borderRadius={"10px"}>
             <HStack h={"100%"} w={"100%"} ml={4} mr={4}>
                 <Text fontSize={'md'} mr={1}>Mermaid</Text>
-                <Button fontSize={'xs'} size={'xs'} isDisabled={isDisabled} isLoading={isLoading} onClick={submit()}>
+                {/* <Button fontSize={'xs'} size={'xs'} isDisabled={isDisabled} isLoading={isLoading} onClick={submit()}>
                     SAVE
                 </Button>
                 {generalData.src!=''?<Button fontSize={'xs'} size={'xs'} isLoading={isLoading} onClick={handleClick()}>
@@ -112,7 +112,7 @@ const EditorHeader = ({src}) => {
                     <Button fontSize={'xs'} size={'xs'}>
                         DOCS
                     </Button>
-                </Link>
+                </Link> */}
             </HStack>
         </Flex>
     )
